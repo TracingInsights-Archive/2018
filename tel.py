@@ -17,7 +17,7 @@ def events_available(year: int) -> any:
     return events
 
 
-events = events_available(YEAR)
+events = ['Australian Grand Prix', 'Bahrain Grand Prix', 'Chinese Grand Prix', 'Azerbaijan Grand Prix']
 
 
 def sessions_available(year: int, event: str | int) -> any:
