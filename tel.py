@@ -17,7 +17,7 @@ def events_available(year: int) -> any:
     return events
 
 
-events = ['Australian Grand Prix', 'Bahrain Grand Prix', 'Chinese Grand Prix', 'Azerbaijan Grand Prix']
+events = ['Australian Grand Prix', 'Bahrain Grand Prix', 'Chinese Grand Prix', 'Azerbaijan Grand Prix', 'Spanish Grand Prix', 'Monaco Grand Prix']
 
 
 def sessions_available(year: int, event: str | int) -> any:
@@ -91,10 +91,6 @@ def laps_data(year: int, event: str | int, session: str, driver: str) -> any:
 
     return drivers_data
 
-
-# # Example usage:
-# result = laps_data(2018, "Bahrain", "R", "GAS")
-# result
 
 
 def accCalc(allLapsDriverTelemetry, Nax, Nay, Naz):
@@ -211,18 +207,18 @@ def telemetry_data(year, event, session: str, driver, lap_number):
 
 
 # Your list of events
-events_list = ['Bahrain Grand Prix']
+events_list = events
 
 # Loop through each event
 for event in events_list:
     # Get sessions for the current event
-    # sessions = sessions_available(YEAR, event)
-    sessions = ['Practice 1']
+    sessions = sessions_available(YEAR, event)
+    
 
     # Loop through each session and create a folder within the event folder
     for session in sessions:
-        # drivers = session_drivers_list(YEAR, event, session)
-        drivers = ['HAM']
+        drivers = session_drivers_list(YEAR, event, session)
+        
 
         for driver in drivers:
             f1session = fastf1.get_session(YEAR, event, session)
@@ -230,8 +226,8 @@ for event in events_list:
             laps = f1session.laps
             driver_laps = laps.pick_driver(driver)
             driver_laps["LapNumber"] = driver_laps["LapNumber"].astype(int)
-            # driver_lap_numbers = round(driver_laps["LapNumber"]).tolist()
-            driver_lap_numbers = [1,2]
+            driver_lap_numbers = round(driver_laps["LapNumber"]).tolist()
+            
 
             for lap_number in driver_lap_numbers:
                 driver_folder = f"{event}/{session}/{driver}"
