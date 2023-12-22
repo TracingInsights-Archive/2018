@@ -17,8 +17,8 @@ def events_available(year: int) -> any:
     return events
 
 
-events = ['Bahrain Grand Prix', 
-          # 'Chinese Grand Prix', 
+events = [#'Bahrain Grand Prix', 
+          'Chinese Grand Prix', 
           # 'Azerbaijan Grand Prix',
           # 'Spanish Grand Prix', 
           # 'Monaco Grand Prix',
