@@ -18,9 +18,9 @@ def events_available(year: int) -> any:
 
 
 events = [#'Bahrain Grand Prix', 
-          'Chinese Grand Prix', 
-          # 'Azerbaijan Grand Prix',
-          # 'Spanish Grand Prix', 
+          # 'Chinese Grand Prix', 
+          'Azerbaijan Grand Prix',
+          'Spanish Grand Prix', 
           # 'Monaco Grand Prix',
           # 'Canadian Grand Prix',
           # 'French Grand Prix',
