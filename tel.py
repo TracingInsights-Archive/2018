@@ -27,9 +27,10 @@ events = [#'Bahrain Grand Prix',
           # 'Austrian Grand Prix', 
           # 'British Grand Prix', 
           # 'German Grand Prix', 'Hungarian Grand Prix', 
-    'Belgian Grand Prix', 'Italian Grand Prix',
-          'Singapore Grand Prix', 
-    # 'Russian Grand Prix', 'Japanese Grand Prix', 'United States Grand Prix', 'Mexican Grand Prix', 'Brazilian Grand Prix', 'Abu Dhabi Grand Prix'
+    # 'Belgian Grand Prix', 'Italian Grand Prix',
+    #       'Singapore Grand Prix', 
+    'Russian Grand Prix', 'Japanese Grand Prix', 'United States Grand Prix',
+    #'Mexican Grand Prix', 'Brazilian Grand Prix', 'Abu Dhabi Grand Prix'
          ]
 
 
