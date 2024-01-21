@@ -5,7 +5,7 @@ import fastf1
 import numpy as np
 import utils
 from fastf1.ergast import Ergast
-
+import pandas as pd
 fastf1.Cache.enable_cache("cache")
 YEAR = 2018
 
