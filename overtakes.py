@@ -4,6 +4,7 @@ import os
 import numpy as np
 import pandas as pd
 import requests
+from io import BytesIO
 
 YEAR = 2018
 
