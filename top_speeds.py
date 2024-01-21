@@ -82,7 +82,7 @@ events_list = events
 
 # Loop through each event
 for event in events_list:
-    session = sessions_available(YEAR, event)
+    sessions = sessions_available(YEAR, event)
 
     for session in sessions:
         top_speed_dict = top_speed(YEAR, event, session)

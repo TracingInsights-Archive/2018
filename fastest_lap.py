@@ -5,7 +5,7 @@ import fastf1
 import numpy as np
 import pandas as pd
 import requests
-
+import utils
 YEAR = 2018
 
 events = [
@@ -81,17 +81,25 @@ def fastest_lap(year: int, event: str | int, session: str) -> any:
 # Your list of events
 events_list = events
 
+def sessions_available(year: int, event: str | int) -> any:
+    # get sessions available for a given year and event
+    event = str(event)
+    data = utils.LatestData(year)
+    sessions = data.get_sessions(event)
+    return sessions
+
 # Loop through each event
 for event in events_list:
-    session = "Race"
+    sessions = sessions_available(YEAR, event)
 
-    fastest_lap_dict = fastest_lap(YEAR, event, session)
+    for session in sessions:
+        fastest_lap_dict = fastest_lap(YEAR, event, session)
 
-    # Specify the file path where you want to save the JSON data
-    file_path = f"{event}/{session}/fastest_lap.json"
+        # Specify the file path where you want to save the JSON data
+        file_path = f"{event}/{session}/fastest_lap.json"
 
-    # Save the dictionary to a JSON file
-    with open(file_path, "w") as json_file:
-        json.dump(fastest_lap_dict, json_file)
+        # Save the dictionary to a JSON file
+        with open(file_path, "w") as json_file:
+            json.dump(fastest_lap_dict, json_file)
 
-    print(f"Dictionary saved to {file_path}")
+        print(f"Dictionary saved to {file_path}")
