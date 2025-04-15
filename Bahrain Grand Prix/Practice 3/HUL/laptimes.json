@@ -1,1 +1,1 @@
-{"time": [92.695, 123.369, 118.561, 92.973, 100.843, 135.407, 91.144, 113.248], "lap": [3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, 11.0], "compound": ["SOFT", "SOFT", "SOFT", "SOFT", "SOFT", "SOFT", "SUPERSOFT", "SUPERSOFT"]}
+{"time": ["None", "None", 92.695, 123.369, 118.561, 92.973, 100.843, 135.407, "None", 91.144, 113.248], "lap": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0], "compound": ["nan", "SOFT", "SOFT", "SOFT", "SOFT", "SOFT", "SOFT", "SOFT", "SUPERSOFT", "SUPERSOFT", "SUPERSOFT"]}
