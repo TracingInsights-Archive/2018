@@ -62,11 +62,11 @@ class TelemetryExtractor:
             # 'Italian Grand Prix',
             # 'Singapore Grand Prix',
             # 'Russian Grand Prix', 
-            'Japanese Grand Prix', 
+            # 'Japanese Grand Prix', 
             # 'United States Grand Prix',
             # 'Mexican Grand Prix', 
             # 'Brazilian Grand Prix', 
-            # 'Abu Dhabi Grand Prix',
+            'Abu Dhabi Grand Prix',
             # 'Australian Grand Prix',
             
         ]
