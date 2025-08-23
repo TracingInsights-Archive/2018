@@ -1,1 +1,1 @@
-{"time": ["None", "None", 97.867, 116.022], "lap": [1.0, 2.0, 3.0, 4.0], "compound": ["nan", "WET", "WET", "WET"]}
+{"time": ["None", "None", 97.867, 116.022], "lap": [1.0, 2.0, 3.0, 4.0], "compound": ["nan", "WET", "WET", "WET"], "stint": ["None", 1, 1, 1], "s1": ["None", "None", 32.164, 32.012], "s2": [37.809, 35.266, 33.683, 41.157], "s3": [43.954, 33.03, 32.02, 42.853], "life": ["None", 2, 3, 4], "pos": ["None", "None", "None", "None"], "status": ["1", "1", "1", "1"], "pb": [false, false, true, false]}
