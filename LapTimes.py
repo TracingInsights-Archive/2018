@@ -34,23 +34,23 @@ import requests
 DEFAULT_YEAR = 2018
 # Keep exactly one uncommented event in this list.
 TARGET_EVENT_NAMES_LIST = [
-    'Bahrain Grand Prix', 
-          #  'Chinese Grand Prix', 
-          # 'Azerbaijan Grand Prix',
-          # 'Spanish Grand Prix', 
-          # 'Monaco Grand Prix',
-          # 'Canadian Grand Prix',
-          # 'French Grand Prix',
-          # 'Austrian Grand Prix', 
-    #       'British Grand Prix', 
-    #       'German Grand Prix', 'Hungarian Grand Prix', 
-    # 'Belgian Grand Prix', 'Italian Grand Prix',
-    #       'Singapore Grand Prix', 
+    # 'Bahrain Grand Prix', 
+           'Chinese Grand Prix', 
+          'Azerbaijan Grand Prix',
+          'Spanish Grand Prix', 
+          'Monaco Grand Prix',
+          'Canadian Grand Prix',
+          'French Grand Prix',
+          'Austrian Grand Prix', 
+          'British Grand Prix', 
+          'German Grand Prix', 'Hungarian Grand Prix', 
+    'Belgian Grand Prix', 'Italian Grand Prix',
+          'Singapore Grand Prix', 
    
-    # 'Mexican Grand Prix', 
+    'Mexican Grand Prix', 
     
-    'Brazilian Grand Prix', 'Abu Dhabi Grand Prix',
-     'Russian Grand Prix', 'Japanese Grand Prix', 'United States Grand Prix',
+    # 'Brazilian Grand Prix', 'Abu Dhabi Grand Prix',
+    #  'Russian Grand Prix', 'Japanese Grand Prix', 'United States Grand Prix',
 ]
 TARGET_EVENT_NAMES = [e.strip() for e in TARGET_EVENT_NAMES_LIST if e.strip()]
 if not TARGET_EVENT_NAMES:
